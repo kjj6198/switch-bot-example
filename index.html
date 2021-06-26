@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwitchBot</title>
+  </head>
+  <body>
+    <button id="button">開燈</button>
+    <button id="button2">關燈</button>
+    <script>
+      button.addEventListener("click", () => {
+        fetch("/open");
+      });
+
+      button2.addEventListener("click", () => {
+        fetch("/close");
+      });
+    </script>
+  </body>
+</html>
